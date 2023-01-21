@@ -8,4 +8,5 @@ from controllers.router import (
 urlpatterns = [
     path('<str:id>', mgadget_id_handler),
     path('', mgadget_handler),
+    path('mgadget/<str:id>', mgadget_id_handler),
 ]
