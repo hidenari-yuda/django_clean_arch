@@ -1,13 +1,6 @@
 instant-django
 ====
 
-簡単なCRUD操作を行うDjangoのアプリケーションです。
-モデル(app/models.py)の編集とマイグレーション、データ表示の変更だけで自分用のアプリケーションとして使うことができます。
-使い方等は以下の記事を参照してください。
-
-
-
-
 Instant-django is a practical sample project of Django.
 
 Instant-django has a sample model and basic CRUD views.
@@ -45,3 +38,16 @@ I would appreciate if you clone this project and replace japanese code with your
 
 ## Author
 
+
+# start
+sudo pip install virtualenv
+
+virtualenv -p python3 venv 
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver 8080

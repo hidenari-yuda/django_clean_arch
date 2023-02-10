@@ -1,0 +1,13 @@
+## BASE URL
+#
+@baseUrl = http://localhost:8080
+
+### create
+POST {{baseUrl}}/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "name test",
+  "ruby": "ruby test",
+  "desc": "desc test"
+}
